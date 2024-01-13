@@ -1,0 +1,53 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+button {
+    font-size: 1.5em;
+    padding: 30px;
+    background-color: #3498db;
+    color: white;
+    border: 80px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+nav {
+    background-color: #555;
+}
+
+a:hover {
+    background-color: darkgreen;
+}
+
+.Ejercicio1 {
+    text-align: left;
+    font-family: Arial;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.Ejercicio2 {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.Ejercicio1 button,
+.Ejercicio2 button {
+    font-size: 1em;
+    padding: 10px 20px;
+}
+

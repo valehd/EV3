@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de Notas</title>
+    <link rel="stylesheet" href="/static/css/estilos.css">
+</head>
+
+<body>
+    <h2>Formulario Notas</h2>
+
+  <form class="Ejercicio1" action="/Ejercicio1" method="post">
+        <label for="nota1">Nota 1:</label>
+        <input type="number" name="nota1" min="10" max="70" required value="{{ request.form['nota1'] }}"><br>
+
+        <label for="nota2">Nota 2:</label>
+        <input type="number" name="nota2" min="10" max="70" required value="{{ request.form['nota2'] }}"><br>
+
+        <label for="nota3">Nota 3:</label>
+        <input type="number" name="nota3" min="10" max="70" required value="{{ request.form['nota3'] }}"><br>
+
+        <label for="asistencia">Asistencia (%):</label>
+        <input type="number" name="asistencia" min="0" max="100" required value="{{ request.form['asistencia'] }}"><br>
+
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+    <p> {{ promedio }}</p>
+    <p>{{ estado }}</p>
+</html>
